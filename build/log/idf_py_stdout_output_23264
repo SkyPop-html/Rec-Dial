@@ -1,0 +1,74 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:/esp/v5.5.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/partition_table/partition-table.bin C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/voice_recorder.bin"
+voice_recorder.bin binary size 0xd14a0 bytes. Smallest app partition is 0x300000 bytes. 0x22eb60 bytes (73%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:/esp/v5.5.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4ff0 bytes. 0x3010 bytes (38%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\esp\v5.5.6\esp-idf\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/esp/v5.5.6/esp-idf -D SERIAL_TOOL=C:/Espressif/tools/python/v5.5.6/venv/Scripts/python.exe;;C:/esp/v5.5.6/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build -P C:/esp/v5.5.6/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 voice_recorder.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.0
+Serial port COM5
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 2MB (AP_3v3)
+Crystal is 40MHz
+MAC: 10:00:3b:4b:a5:cc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x000e1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20464 bytes to 13206...
+Writing at 0x00000000... (100 %)
+Wrote 20464 bytes (13206 compressed) at 0x00000000 in 0.4 seconds (effective 385.4 kbit/s)...
+Hash of data verified.
+Compressed 857248 bytes to 535062...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001ccb9... (6 %)
+Writing at 0x00026b1a... (9 %)
+Writing at 0x0003089d... (12 %)
+Writing at 0x00036c3e... (15 %)
+Writing at 0x0003d05a... (18 %)
+Writing at 0x0004305c... (21 %)
+Writing at 0x0004953e... (24 %)
+Writing at 0x0004f665... (27 %)
+Writing at 0x000556e6... (30 %)
+Writing at 0x0005b249... (33 %)
+Writing at 0x0006053b... (36 %)
+Writing at 0x0006546c... (39 %)
+Writing at 0x0006aced... (42 %)
+Writing at 0x0007031c... (45 %)
+Writing at 0x00075747... (48 %)
+Writing at 0x0007ac38... (51 %)
+Writing at 0x00080201... (54 %)
+Writing at 0x0008647b... (57 %)
+Writing at 0x0008bc08... (60 %)
+Writing at 0x0009184b... (63 %)
+Writing at 0x000975d9... (66 %)
+Writing at 0x0009d193... (69 %)
+Writing at 0x000a2fe3... (72 %)
+Writing at 0x000a896b... (75 %)
+Writing at 0x000adfbc... (78 %)
+Writing at 0x000b4889... (81 %)
+Writing at 0x000bd0b6... (84 %)
+Writing at 0x000c2dd1... (87 %)
+Writing at 0x000cb9ba... (90 %)
+Writing at 0x000d19aa... (93 %)
+Writing at 0x000d8190... (96 %)
+Writing at 0x000dd37b... (100 %)
+Wrote 857248 bytes (535062 compressed) at 0x00010000 in 12.1 seconds (effective 567.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 120...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (120 compressed) at 0x00008000 in 0.0 seconds (effective 670.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

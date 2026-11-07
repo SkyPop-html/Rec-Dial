@@ -1,0 +1,209 @@
+Command: C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:\esp\v5.5.6\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\voice_recorder.elf C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe' 'C:\esp\v5.5.6\esp-idf\tools\idf.py' '-p' 'COM5'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x13ec
+load:0x403c8700,len:0xccc
+load:0x403cb700,len:0x2edc
+entry 0x403c8918
+[0;32mI (24) boot: ESP-IDF v5.5.6 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Nov  6 2026 21:35:53[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (32) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (36) boot: Partition Table:[0m
+[0;32mI (39) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (45) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (52) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (58) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (65) boot:  3 storage          Unknown data     01 81 00310000 004e0000[0m
+[0;32mI (71) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=101fch ( 66044) map[0m
+[0;32mI (90) esp_image: segment 1: paddr=00020224 vaddr=3fc93f00 size=030dch ( 12508) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=00023308 vaddr=40374000 size=0cd10h ( 52496) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=2b08ch (176268) map[0m
+[0;32mI (138) esp_image: segment 4: paddr=0005b0b4 vaddr=40380d10 size=03134h ( 12596) load[0m
+[0;32mI (141) esp_image: segment 5: paddr=0005e1f0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (148) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) cpu_start: Multicore app[0m
+[0;32mI (167) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (168) cpu_start: Pro cpu start user code[0m
+[0;32mI (168) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (169) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     voice_recorder[0m
+[0;32mI (178) app_init: App version:      1[0m
+[0;32mI (181) app_init: Compile time:     Nov  6 2026 21:35:15[0m
+[0;32mI (186) app_init: ELF file SHA256:  727383ba0...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.5.6[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC99090 len 00050680 (321 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (234) spi_flash: detected chip: generic[0m
+[0;32mI (237) spi_flash: flash io: dio[0m
+[0;32mI (240) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (246) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (783) app_main: ==========================================================[0m
+[0;32mI (783) app_main:   ESP32-S3 Voice Recorder Firmware V1 (ESP-IDF C)[0m
+[0;32mI (783) app_main:   Build Date: Nov  6 2026 21:35:41[0m
+[0;32mI (783) app_main:   Silicon Revision: v0.2 | Cores: 2[0m
+[0;32mI (793) app_main:   Framework: ESP-IDF Native C99/C11 (No Arduino, No C++)[0m
+[0;32mI (793) app_main: ==========================================================[0m
+[0;32mI (883) oled_ui: OLED initialized at 0x3C[0m
+[0;32mI (883) app_main: [STAGE 1] Initializing Status LED...[0m
+[0;32mI (883) status_led: Configuring Status LED on GPIO 21 (Active HIGH)...[0m
+[0;32mI (883) status_led: Status LED initialized successfully.[0m
+[0;32mI (893) app_main: [STAGE 2] Initializing Button Input...[0m
+[0;32mI (893) button_control: Configuring buttons (Record: GPIO 1, Spare: GPIO 2)...[0m
+[0;32mI (903) button_control: Buttons initialized successfully (Active LOW with internal pull-up).[0m
+[0;32mI (913) app_main: [STAGE 3] Mounting internal flash filesystem...[0m
+[0;32mI (913) flash_storage: Mounting internal flash FAT filesystem at /flash...[0m
+[0;33mW (923) flash_storage: A blank storage partition will be formatted on first boot.[0m
+[0;32mI (933) flash_storage: Internal flash filesystem mounted. Free space: 4 MB[0m
+[0;32mI (1073) flash_storage: Internal flash filesystem POSIX read/write test passed.[0m
+[0;32mI (1073) app_main: [STAGE 4] Initializing I2S INMP441 Microphone...[0m
+[0;32mI (1073) audio_capture: Initializing I2S INMP441 Microphone (Master RX)...[0m
+[0;32mI (1083) audio_capture:   BCLK/SCK=GPIO4, WS/LRCLK=GPIO5, SD/DIN=GPIO6[0m
+[0;32mI (1083) audio_capture:   Rate=16000 Hz, Channels=1 (Mono Left Slot), FrameWidth=32-bit[0m
+[0;32mI (1093) audio_capture: I2S microphone driver initialized successfully.[0m
+[0;32mI (1103) audio_capture: Running microphone self-test...[0m
+[0;32mI (1103) audio_capture: I2S RX channel enabled.[0m
+[0;32mI (1123) audio_capture: I2S RX channel paused.[0m
+[0;32mI (1123) audio_capture: Self-test summary: 166/256 samples active | Dynamic Range: [-3089, 516][0m
+[0;32mI (1123) audio_capture: Microphone self-test PASSED (Audio activity detected).[0m
+[0;32mI (1163) app_main: ==========================================================[0m
+[0;32mI (1163) app_main:   ALL HARDWARE READY! Press Record button (GPIO 1) to start.[0m
+[0;32mI (1163) app_main: ==========================================================[0m
+[0;32mI (1173) button_control: Record/Stop button click detected.[0m
+[0;32mI (1173) app_main: --------------------------------------------------[0m
+[0;32mI (1183) app_main: Starting new voice recording session...[0m
+[0;32mI (1183) flash_storage: Allocated recording file: /flash/REC0001.WAV[0m
+[0;32mI (1193) wav_writer: Created WAV file: /flash/REC0001.WAV (44-byte header initialized).[0m
+[0;32mI (1203) audio_capture: I2S RX channel enabled.[0m
+[0;32mI (1233) app_main: >>> RECORDING IN PROGRESS: /flash/REC0001.WAV <<<[0m
+[0;32mI (2203) app_main: [REC PROGRESS] 31872 bytes captured (1.0 sec)[0m
+[0;32mI (3213) app_main: [REC PROGRESS] 64128 bytes captured (2.0 sec)[0m
+[0;32mI (4223) app_main: [REC PROGRESS] 96384 bytes captured (3.0 sec)[0m
+[0;32mI (5233) app_main: [REC PROGRESS] 128640 bytes captured (4.0 sec)[0m
+[0;32mI (6243) app_main: [REC PROGRESS] 160896 bytes captured (5.0 sec)[0m
+[0;32mI (7243) app_main: [REC PROGRESS] 193152 bytes captured (6.0 sec)[0m
+[0;32mI (8253) app_main: [REC PROGRESS] 225280 bytes captured (7.0 sec)[0m
+[0;32mI (9263) app_main: [REC PROGRESS] 257664 bytes captured (8.1 sec)[0m
+[0;32mI (10273) app_main: [REC PROGRESS] 289920 bytes captured (9.1 sec)[0m
+[0;32mI (11283) app_main: [REC PROGRESS] 322176 bytes captured (10.1 sec)[0m
+[0;32mI (12283) app_main: [REC PROGRESS] 354432 bytes captured (11.1 sec)[0m
+[0;32mI (13293) app_main: [REC PROGRESS] 386688 bytes captured (12.1 sec)[0m
+[0;32mI (14303) app_main: [REC PROGRESS] 418944 bytes captured (13.1 sec)[0m
+[0;32mI (15313) app_main: [REC PROGRESS] 451200 bytes captured (14.1 sec)[0m
+[0;32mI (16313) app_main: [REC PROGRESS] 483328 bytes captured (15.1 sec)[0m
+[0;32mI (17323) app_main: [REC PROGRESS] 515712 bytes captured (16.1 sec)[0m
+[0;32mI (18333) app_main: [REC PROGRESS] 547968 bytes captured (17.1 sec)[0m
+[0;32mI (19343) app_main: [REC PROGRESS] 580224 bytes captured (18.1 sec)[0m
+[0;32mI (20353) app_main: [REC PROGRESS] 612480 bytes captured (19.1 sec)[0m
+[0;32mI (21363) app_main: [REC PROGRESS] 644736 bytes captured (20.1 sec)[0m
+[0;32mI (22363) app_main: [REC PROGRESS] 676992 bytes captured (21.2 sec)[0m
+[0;32mI (23373) app_main: [REC PROGRESS] 709248 bytes captured (22.2 sec)[0m
+[0;32mI (24383) app_main: [REC PROGRESS] 741376 bytes captured (23.2 sec)[0m
+[0;32mI (25393) app_main: [REC PROGRESS] 773760 bytes captured (24.2 sec)[0m
+[0;32mI (26403) app_main: [REC PROGRESS] 806016 bytes captured (25.2 sec)[0m
+[0;32mI (27403) app_main: [REC PROGRESS] 838272 bytes captured (26.2 sec)[0m
+[0;32mI (28413) app_main: [REC PROGRESS] 870528 bytes captured (27.2 sec)[0m
+[0;32mI (29423) app_main: [REC PROGRESS] 902784 bytes captured (28.2 sec)[0m
+[0;32mI (30433) app_main: [REC PROGRESS] 935040 bytes captured (29.2 sec)[0m
+[0;32mI (31443) app_main: [REC PROGRESS] 967296 bytes captured (30.2 sec)[0m
+[0;32mI (32443) app_main: [REC PROGRESS] 999424 bytes captured (31.2 sec)[0m
+[0;32mI (33453) app_main: [REC PROGRESS] 1031808 bytes captured (32.2 sec)[0m
+[0;32mI (34463) app_main: [REC PROGRESS] 1064064 bytes captured (33.3 sec)[0m
+[0;32mI (35473) app_main: [REC PROGRESS] 1096320 bytes captured (34.3 sec)[0m
+[0;32mI (36483) app_main: [REC PROGRESS] 1128576 bytes captured (35.3 sec)[0m
+[0;32mI (37483) app_main: [REC PROGRESS] 1160832 bytes captured (36.3 sec)[0m
+[0;32mI (38493) app_main: [REC PROGRESS] 1193088 bytes captured (37.3 sec)[0m
+[0;32mI (39503) app_main: [REC PROGRESS] 1225344 bytes captured (38.3 sec)[0m
+[0;32mI (40503) app_main: [REC PROGRESS] 1257472 bytes captured (39.3 sec)[0m
+[0;32mI (41523) app_main: [REC PROGRESS] 1289856 bytes captured (40.3 sec)[0m
+[0;32mI (42523) app_main: [REC PROGRESS] 1322112 bytes captured (41.3 sec)[0m
+[0;32mI (43533) app_main: [REC PROGRESS] 1354368 bytes captured (42.3 sec)[0m
+[0;32mI (44543) app_main: [REC PROGRESS] 1386624 bytes captured (43.3 sec)[0m
+[0;32mI (45553) app_main: [REC PROGRESS] 1418880 bytes captured (44.3 sec)[0m
+[0;32mI (46563) app_main: [REC PROGRESS] 1451136 bytes captured (45.3 sec)[0m
+[0;32mI (47563) app_main: [REC PROGRESS] 1483392 bytes captured (46.4 sec)[0m
+[0;32mI (48573) app_main: [REC PROGRESS] 1515520 bytes captured (47.4 sec)[0m
+[0;32mI (49583) app_main: [REC PROGRESS] 1547904 bytes captured (48.4 sec)[0m
+[0;32mI (50593) app_main: [REC PROGRESS] 1580160 bytes captured (49.4 sec)[0m
+[0;32mI (51603) app_main: [REC PROGRESS] 1612416 bytes captured (50.4 sec)[0m
+[0;32mI (52603) app_main: [REC PROGRESS] 1644672 bytes captured (51.4 sec)[0m
+[0;32mI (53613) app_main: [REC PROGRESS] 1676928 bytes captured (52.4 sec)[0m
+[0;32mI (54623) app_main: [REC PROGRESS] 1709184 bytes captured (53.4 sec)[0m
+[0;32mI (55633) app_main: [REC PROGRESS] 1741440 bytes captured (54.4 sec)[0m
+[0;32mI (56633) app_main: [REC PROGRESS] 1773568 bytes captured (55.4 sec)[0m
+[0;32mI (57643) app_main: [REC PROGRESS] 1805952 bytes captured (56.4 sec)[0m
+[0;32mI (58653) app_main: [REC PROGRESS] 1838208 bytes captured (57.4 sec)[0m
+[0;32mI (59663) app_main: [REC PROGRESS] 1870464 bytes captured (58.5 sec)[0m
+[0;32mI (60673) app_main: [REC PROGRESS] 1902720 bytes captured (59.5 sec)[0m
+[0;32mI (61693) app_main: [REC PROGRESS] 1933312 bytes captured (60.4 sec)[0m
+[0;32mI (62703) app_main: [REC PROGRESS] 1967744 bytes captured (61.5 sec)[0m
+[0;32mI (63743) app_main: [REC PROGRESS] 1998848 bytes captured (62.5 sec)[0m
+[0;32mI (64753) app_main: [REC PROGRESS] 2033280 bytes captured (63.5 sec)[0m
+[0;32mI (65793) app_main: [REC PROGRESS] 2064384 bytes captured (64.5 sec)[0m
+[0;32mI (66803) app_main: [REC PROGRESS] 2098816 bytes captured (65.6 sec)[0m
+[0;32mI (67843) app_main: [REC PROGRESS] 2129920 bytes captured (66.6 sec)[0m
+[0;32mI (68843) app_main: [REC PROGRESS] 2164352 bytes captured (67.6 sec)[0m
+[0;32mI (69883) app_main: [REC PROGRESS] 2195456 bytes captured (68.6 sec)[0m
+[0;32mI (70883) app_main: [REC PROGRESS] 2229376 bytes captured (69.7 sec)[0m
+[0;32mI (71933) app_main: [REC PROGRESS] 2260992 bytes captured (70.7 sec)[0m
+[0;32mI (72943) app_main: [REC PROGRESS] 2295424 bytes captured (71.7 sec)[0m
+[0;32mI (73983) app_main: [REC PROGRESS] 2326528 bytes captured (72.7 sec)[0m
+[0;32mI (74993) app_main: [REC PROGRESS] 2360960 bytes captured (73.8 sec)[0m
+[0;32mI (76033) app_main: [REC PROGRESS] 2392064 bytes captured (74.8 sec)[0m
+[0;32mI (77043) app_main: [REC PROGRESS] 2426496 bytes captured (75.8 sec)[0m
+[0;32mI (78083) app_main: [REC PROGRESS] 2457600 bytes captured (76.8 sec)[0m
+[0;32mI (79083) app_main: [REC PROGRESS] 2492032 bytes captured (77.9 sec)[0m
+[0;32mI (80123) app_main: [REC PROGRESS] 2523136 bytes captured (78.8 sec)[0m
+[0;32mI (81123) app_main: [REC PROGRESS] 2557056 bytes captured (79.9 sec)[0m
+[0;32mI (82173) app_main: [REC PROGRESS] 2588672 bytes captured (80.9 sec)[0m
+[0;32mI (83183) app_main: [REC PROGRESS] 2623104 bytes captured (82.0 sec)[0m
+[0;32mI (84223) app_main: [REC PROGRESS] 2654208 bytes captured (82.9 sec)[0m
+[0;32mI (85233) app_main: [REC PROGRESS] 2688640 bytes captured (84.0 sec)[0m
+[0;32mI (86273) app_main: [REC PROGRESS] 2719744 bytes captured (85.0 sec)[0m
+[0;32mI (87283) app_main: [REC PROGRESS] 2754176 bytes captured (86.1 sec)[0m
+[0;32mI (88323) app_main: [REC PROGRESS] 2785280 bytes captured (87.0 sec)[0m
+[0;32mI (89323) app_main: [REC PROGRESS] 2819712 bytes captured (88.1 sec)[0m
+[0;32mI (90363) app_main: [REC PROGRESS] 2850816 bytes captured (89.1 sec)[0m
+[0;32mI (91363) app_main: [REC PROGRESS] 2884736 bytes captured (90.1 sec)[0m
+[0;32mI (92413) app_main: [REC PROGRESS] 2916352 bytes captured (91.1 sec)[0m
+[0;32mI (93423) app_main: [REC PROGRESS] 2950784 bytes captured (92.2 sec)[0m
+[0;32mI (94463) app_main: [REC PROGRESS] 2981888 bytes captured (93.2 sec)[0m
+[0;32mI (95473) app_main: [REC PROGRESS] 3016320 bytes captured (94.3 sec)[0m
+[0;32mI (96513) app_main: [REC PROGRESS] 3047424 bytes captured (95.2 sec)[0m
+[0;32mI (97523) app_main: [REC PROGRESS] 3081856 bytes captured (96.3 sec)[0m
+[0;32mI (98563) app_main: [REC PROGRESS] 3112960 bytes captured (97.3 sec)[0m
+[0;32mI (99563) app_main: [REC PROGRESS] 3147392 bytes captured (98.4 sec)[0m
+[0;32mI (100603) app_main: [REC PROGRESS] 3178496 bytes captured (99.3 sec)[0m
+[0;32mI (101603) app_main: [REC PROGRESS] 3212416 bytes captured (100.4 sec)[0m
+[0;32mI (102653) app_main: [REC PROGRESS] 3244032 bytes captured (101.4 sec)[0m
+[0;32mI (103663) app_main: [REC PROGRESS] 3278464 bytes captured (102.5 sec)[0m
+[0;32mI (104703) app_main: [REC PROGRESS] 3309568 bytes captured (103.4 sec)[0m
+[0;32mI (105713) app_main: [REC PROGRESS] 3344000 bytes captured (104.5 sec)[0m
+[0;32mI (106753) app_main: [REC PROGRESS] 3375104 bytes captured (105.5 sec)[0m
+[0;32mI (107763) app_main: [REC PROGRESS] 3409536 bytes captured (106.5 sec)[0m
+[0;32mI (108803) app_main: [REC PROGRESS] 3440640 bytes captured (107.5 sec)[0m
+[0;32mI (109803) app_main: [REC PROGRESS] 3475072 bytes captured (108.6 sec)[0m
+[0;32mI (110843) app_main: [REC PROGRESS] 3506176 bytes captured (109.6 sec)[0m
+[0;32mI (111843) app_main: [REC PROGRESS] 3540096 bytes captured (110.6 sec)[0m
+[0;32mI (112893) app_main: [REC PROGRESS] 3571712 bytes captured (111.6 sec)[0m
+[0;32mI (113903) app_main: [REC PROGRESS] 3606144 bytes captured (112.7 sec)[0m
+[0;32mI (114943) app_main: [REC PROGRESS] 3637248 bytes captured (113.7 sec)[0m
+[0;32mI (115953) app_main: [REC PROGRESS] 3671680 bytes captured (114.7 sec)[0m
+[0;32mI (116993) app_main: [REC PROGRESS] 3702784 bytes captured (115.7 sec)[0m
+[0;32mI (118003) app_main: [REC PROGRESS] 3737216 bytes captured (116.8 sec)[0m
+[0;32mI (119043) app_main: [REC PROGRESS] 3768320 bytes captured (117.8 sec)[0m
+[0;32mI (120043) app_main: [REC PROGRESS] 3802752 bytes captured (118.8 sec)[0m
+[0;32mI (121083) app_main: [REC PROGRESS] 3833856 bytes captured (119.8 sec)[0m

@@ -1,0 +1,18 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:/esp/v5.5.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4ff0 bytes. 0x3010 bytes (38%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/flash_storage.c.obj
+[4/9] Completed 'bootloader'
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable voice_recorder.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/voice_recorder.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:/esp/v5.5.6/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/partition_table/partition-table.bin C:/Users/notal/Downloads/voice_recorder_internal_flash_espidf_updated/build/voice_recorder.bin"
+voice_recorder.bin binary size 0x4e250 bytes. Smallest app partition is 0x300000 bytes. 0x2b1db0 bytes (90%) free.

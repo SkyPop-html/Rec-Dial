@@ -1,0 +1,27 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "audio_capture.c"
+        "flash_storage.c"
+        "wav_writer.c"
+        "button_control.c"
+        "status_led.c"
+        "oled_ui.c"
+        "wifi_ap.c"
+        "web_server.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_driver_i2s
+        esp_driver_gpio
+        esp_driver_i2c
+        esp_timer
+        fatfs
+        wear_levelling
+        vfs
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        esp_http_server
+)

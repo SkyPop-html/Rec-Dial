@@ -1,0 +1,422 @@
+Command: C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe C:\esp\v5.5.6\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\voice_recorder.elf C:\Users\notal\Downloads\voice_recorder_internal_flash_espidf_updated\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.6\venv\Scripts\python.exe' 'C:\esp\v5.5.6\esp-idf\tools\idf.py' '-p' 'COM5'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x13ec
+load:0x403c8700,len:0xccc
+load:0x403cb700,len:0x2edc
+entry 0x403c8918
+[0;32mI (24) boot: ESP-IDF v5.5.6 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Nov  6 2026 21:35:53[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (32) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (36) boot: Partition Table:[0m
+[0;32mI (39) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (45) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (52) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (58) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (65) boot:  3 storage          Unknown data     01 81 00310000 004e0000[0m
+[0;32mI (71) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1f464h (128100) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0002f48c vaddr=3fc9b000 size=00b8ch (  2956) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=961c8h (614856) map[0m
+[0;32mI (216) esp_image: segment 3: paddr=000c61f0 vaddr=3fc9bb8c size=04324h ( 17188) load[0m
+[0;32mI (220) esp_image: segment 4: paddr=000ca51c vaddr=40374000 size=16f38h ( 94008) load[0m
+[0;32mI (241) esp_image: segment 5: paddr=000e145c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (256) cpu_start: Multicore app[0m
+[0;32mI (264) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (265) cpu_start: Pro cpu start user code[0m
+[0;32mI (265) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (267) app_init: Application information:[0m
+[0;32mI (270) app_init: Project name:     voice_recorder[0m
+[0;32mI (275) app_init: App version:      1[0m
+[0;32mI (278) app_init: Compile time:     Nov  6 2026 21:35:15[0m
+[0;32mI (283) app_init: ELF file SHA256:  238e86ed2...[0m
+[0;32mI (288) app_init: ESP-IDF:          v5.5.6[0m
+[0;32mI (291) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (295) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (299) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (303) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (309) heap_init: At 3FCA5400 len 00044310 (272 KiB): RAM[0m
+[0;32mI (315) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (320) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (325) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;32mI (337) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (343) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (350) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (880) app_main: ==========================================================[0m
+[0;32mI (880) app_main:   ESP32-S3 Voice Recorder Firmware V1 (ESP-IDF C)[0m
+[0;32mI (880) app_main:   Build Date: Nov  7 2026 15:49:38[0m
+[0;32mI (880) app_main:   Silicon Revision: v0.2 | Cores: 2[0m
+[0;32mI (890) app_main:   Framework: ESP-IDF Native C99/C11 (No Arduino, No C++)[0m
+[0;32mI (890) app_main: ==========================================================[0m
+[0;32mI (900) app_main: Starting Wi-Fi hotspot...[0m
+[0;32mI (920) pp: pp rom version: e7ae62f[0m
+[0;32mI (920) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (930) wifi:wifi driver task: 3fcaa310, prio:23, stack:6656, core=0[0m
+[0;32mI (930) wifi:wifi firmware version: c6dceae[0m
+[0;32mI (930) wifi:wifi certification version: v7.0[0m
+[0;32mI (930) wifi:config NVS flash: enabled[0m
+[0;32mI (940) wifi:config nano formatting: disabled[0m
+[0;32mI (940) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (950) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (950) wifi:Init management short buffer num: 32[0m
+[0;32mI (950) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (960) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (960) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (970) wifi:Init static rx buffer num: 10[0m
+[0;32mI (970) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (970) wifi_init: rx ba win: 6[0m
+[0;32mI (980) wifi_init: accept mbox: 6[0m
+[0;32mI (980) wifi_init: tcpip mbox: 32[0m
+[0;32mI (980) wifi_init: udp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp tx win: 5760[0m
+[0;32mI (990) wifi_init: tcp rx win: 5760[0m
+[0;32mI (990) wifi_init: tcp mss: 1440[0m
+[0;32mI (1000) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1000) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1010) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1050) wifi:mode : softAP (10:00:3b:4b:a5:cd)[0m
+[0;32mI (1050) wifi:Total power save buffer number: 16[0m
+[0;32mI (1060) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1060) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1060) WIFI_AP: Wi-Fi hotspot started![0m
+[0;32mI (1060) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1070) WIFI_AP: Network: VoiceRecorder[0m
+[0;32mI (1070) WIFI_AP: Password: 12345678[0m
+[0;32mI (1080) WIFI_AP: IP: 192.168.4.1[0m
+[0;32mI (1160) oled_ui: OLED initialized at 0x3C[0m
+[0;32mI (1160) app_main: [STAGE 1] Initializing Status LED...[0m
+[0;32mI (1160) status_led: Configuring Status LED on GPIO 21 (Active HIGH)...[0m
+[0;32mI (1160) status_led: Status LED initialized successfully.[0m
+[0;32mI (1170) app_main: [STAGE 2] Initializing Button Input...[0m
+[0;32mI (1170) button_control: Configuring buttons (Record: GPIO 1, Spare: GPIO 2)...[0m
+[0;32mI (1180) button_control: Buttons initialized successfully (Active LOW with internal pull-up).[0m
+[0;32mI (1190) app_main: [STAGE 3] Mounting internal flash filesystem...[0m
+[0;32mI (1190) flash_storage: Mounting internal flash FAT filesystem at /flash...[0m
+[0;33mW (1200) flash_storage: A blank storage partition will be formatted on first boot.[0m
+[0;32mI (1220) flash_storage: Internal flash filesystem mounted. Free space: 4 MB[0m
+[0;32mI (1380) flash_storage: Internal flash filesystem POSIX read/write test passed.[0m
+[0;32mI (1380) app_main: [STAGE 4] Initializing I2S INMP441 Microphone...[0m
+[0;32mI (1390) audio_capture: Initializing I2S INMP441 Microphone (Master RX)...[0m
+[0;32mI (1390) audio_capture:   BCLK/SCK=GPIO4, WS/LRCLK=GPIO5, SD/DIN=GPIO6[0m
+[0;32mI (1400) audio_capture:   Rate=16000 Hz, Channels=1 (Mono Left Slot), FrameWidth=32-bit[0m
+[0;32mI (1410) audio_capture: I2S microphone driver initialized successfully.[0m
+[0;32mI (1410) audio_capture: Running microphone self-test...[0m
+[0;32mI (1420) audio_capture: I2S RX channel enabled.[0m
+[0;32mI (1430) audio_capture: I2S RX channel paused.[0m
+[0;32mI (1430) audio_capture: Self-test summary: 244/256 samples active | Dynamic Range: [-14964, 6150][0m
+[0;32mI (1430) audio_capture: Microphone self-test PASSED (Audio activity detected).[0m
+[0;32mI (1470) app_main: ==========================================================[0m
+[0;32mI (1470) app_main:   ALL HARDWARE READY! Press Record button (GPIO 1) to start.[0m
+[0;32mI (1470) app_main: ==========================================================[0m
+[0;32mI (1480) button_control: Record/Stop button click detected.[0m
+[0;32mI (1490) app_main: --------------------------------------------------[0m
+[0;32mI (1490) app_main: Starting new voice recording session...[0m
+[0;32mI (1500) flash_storage: Allocated recording file: /flash/REC0007.WAV[0m
+[0;32mI (1500) wav_writer: Created WAV file: /flash/REC0007.WAV (44-byte header initialized).[0m
+[0;32mI (1510) audio_capture: I2S RX channel enabled.[0m
+[0;32mI (1540) app_main: >>> RECORDING IN PROGRESS: /flash/REC0007.WAV <<<[0m
+[0;32mI (2520) app_main: [REC PROGRESS] 31872 bytes captured (1.0 sec)[0m
+[0;32mI (3530) app_main: [REC PROGRESS] 64128 bytes captured (2.0 sec)[0m
+[0;32mI (4530) app_main: [REC PROGRESS] 96384 bytes captured (3.0 sec)[0m
+[0;32mI (5540) app_main: [REC PROGRESS] 128640 bytes captured (4.0 sec)[0m
+[0;32mI (6550) app_main: [REC PROGRESS] 160896 bytes captured (5.0 sec)[0m
+[0;32mI (7560) app_main: [REC PROGRESS] 193152 bytes captured (6.0 sec)[0m
+[0;32mI (8570) app_main: [REC PROGRESS] 225280 bytes captured (7.0 sec)[0m
+[0;32mI (9570) app_main: [REC PROGRESS] 257664 bytes captured (8.1 sec)[0m
+[0;32mI (10580) app_main: [REC PROGRESS] 289920 bytes captured (9.1 sec)[0m
+[0;32mI (11590) app_main: [REC PROGRESS] 322176 bytes captured (10.1 sec)[0m
+[0;32mI (12600) app_main: [REC PROGRESS] 354432 bytes captured (11.1 sec)[0m
+[0;32mI (13610) app_main: [REC PROGRESS] 386688 bytes captured (12.1 sec)[0m
+[0;32mI (14610) app_main: [REC PROGRESS] 418944 bytes captured (13.1 sec)[0m
+[0;32mI (15620) app_main: [REC PROGRESS] 451200 bytes captured (14.1 sec)[0m
+[0;32mI (15960) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15970) wifi:station: ce:37:2f:6a:5f:22 join, AID=1, bgn, 20[0m
+[0;32mI (16140) wifi:<ba-add>idx:2 (ifx:1, ce:37:2f:6a:5f:22), tid:0, ssn:0, winSize:64[0m
+[0;32mI (16220) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16640) app_main: [REC PROGRESS] 483328 bytes captured (15.1 sec)[0m
+[0;32mI (17640) app_main: [REC PROGRESS] 515712 bytes captured (16.1 sec)[0m
+[0;32mI (18650) app_main: [REC PROGRESS] 547968 bytes captured (17.1 sec)[0m
+[0;32mI (19650) app_main: [REC PROGRESS] 580224 bytes captured (18.1 sec)[0m
+[0;32mI (20660) app_main: [REC PROGRESS] 612480 bytes captured (19.1 sec)[0m
+[0;32mI (21670) app_main: [REC PROGRESS] 644736 bytes captured (20.1 sec)[0m
+[0;32mI (22680) app_main: [REC PROGRESS] 676992 bytes captured (21.2 sec)[0m
+[0;32mI (23690) app_main: [REC PROGRESS] 709248 bytes captured (22.2 sec)[0m
+[0;32mI (24700) app_main: [REC PROGRESS] 741376 bytes captured (23.2 sec)[0m
+[0;32mI (25700) app_main: [REC PROGRESS] 773760 bytes captured (24.2 sec)[0m
+[0;32mI (26710) app_main: [REC PROGRESS] 806016 bytes captured (25.2 sec)[0m
+[0;32mI (27720) app_main: [REC PROGRESS] 838272 bytes captured (26.2 sec)[0m
+[0;32mI (28730) app_main: [REC PROGRESS] 870528 bytes captured (27.2 sec)[0m
+[0;32mI (29730) app_main: [REC PROGRESS] 902784 bytes captured (28.2 sec)[0m
+[0;32mI (30740) app_main: [REC PROGRESS] 935040 bytes captured (29.2 sec)[0m
+[0;32mI (31750) app_main: [REC PROGRESS] 967296 bytes captured (30.2 sec)[0m
+[0;32mI (32760) app_main: [REC PROGRESS] 999424 bytes captured (31.2 sec)[0m
+[0;32mI (33770) app_main: [REC PROGRESS] 1031808 bytes captured (32.2 sec)[0m
+[0;32mI (34770) app_main: [REC PROGRESS] 1064064 bytes captured (33.3 sec)[0m
+[0;32mI (35780) app_main: [REC PROGRESS] 1096320 bytes captured (34.3 sec)[0m
+[0;32mI (36790) app_main: [REC PROGRESS] 1128576 bytes captured (35.3 sec)[0m
+[0;32mI (37800) app_main: [REC PROGRESS] 1160832 bytes captured (36.3 sec)[0m
+[0;32mI (38810) app_main: [REC PROGRESS] 1193088 bytes captured (37.3 sec)[0m
+[0;32mI (39810) app_main: [REC PROGRESS] 1225344 bytes captured (38.3 sec)[0m
+[0;32mI (40830) app_main: [REC PROGRESS] 1257472 bytes captured (39.3 sec)[0m
+[0;32mI (41830) app_main: [REC PROGRESS] 1289856 bytes captured (40.3 sec)[0m
+[0;32mI (42840) app_main: [REC PROGRESS] 1322112 bytes captured (41.3 sec)[0m
+[0;32mI (43850) app_main: [REC PROGRESS] 1354368 bytes captured (42.3 sec)[0m
+[0;32mI (44850) app_main: [REC PROGRESS] 1386624 bytes captured (43.3 sec)[0m
+[0;32mI (45860) app_main: [REC PROGRESS] 1418880 bytes captured (44.3 sec)[0m
+[0;32mI (46870) app_main: [REC PROGRESS] 1451136 bytes captured (45.3 sec)[0m
+[0;32mI (47880) app_main: [REC PROGRESS] 1483392 bytes captured (46.4 sec)[0m
+[0;32mI (48890) app_main: [REC PROGRESS] 1515520 bytes captured (47.4 sec)[0m
+[0;32mI (49890) app_main: [REC PROGRESS] 1547904 bytes captured (48.4 sec)[0m
+[0;32mI (50900) app_main: [REC PROGRESS] 1580160 bytes captured (49.4 sec)[0m
+[0;32mI (51910) app_main: [REC PROGRESS] 1612416 bytes captured (50.4 sec)[0m
+[0;32mI (52920) app_main: [REC PROGRESS] 1644672 bytes captured (51.4 sec)[0m
+[0;32mI (53930) app_main: [REC PROGRESS] 1676928 bytes captured (52.4 sec)[0m
+[0;32mI (54930) app_main: [REC PROGRESS] 1709184 bytes captured (53.4 sec)[0m
+[0;32mI (55940) app_main: [REC PROGRESS] 1741440 bytes captured (54.4 sec)[0m
+[0;32mI (56960) app_main: [REC PROGRESS] 1773568 bytes captured (55.4 sec)[0m
+[0;32mI (57960) app_main: [REC PROGRESS] 1805952 bytes captured (56.4 sec)[0m
+[0;32mI (58970) app_main: [REC PROGRESS] 1838208 bytes captured (57.4 sec)[0m
+[0;32mI (59970) app_main: [REC PROGRESS] 1867776 bytes captured (58.4 sec)[0m
+[0;32mI (60980) app_main: [REC PROGRESS] 1902336 bytes captured (59.4 sec)[0m
+[0;32mI (62030) app_main: [REC PROGRESS] 1933312 bytes captured (60.4 sec)[0m
+[0;32mI (63050) app_main: [REC PROGRESS] 1967872 bytes captured (61.5 sec)[0m
+[0;32mI (64100) app_main: [REC PROGRESS] 1998848 bytes captured (62.5 sec)[0m
+[0;32mI (65110) app_main: [REC PROGRESS] 2033408 bytes captured (63.5 sec)[0m
+[0;32mI (66160) app_main: [REC PROGRESS] 2064384 bytes captured (64.5 sec)[0m
+[0;32mI (67170) app_main: [REC PROGRESS] 2098944 bytes captured (65.6 sec)[0m
+[0;32mI (68230) app_main: [REC PROGRESS] 2129920 bytes captured (66.6 sec)[0m
+[0;32mI (69240) app_main: [REC PROGRESS] 2164480 bytes captured (67.6 sec)[0m
+[0;32mI (70290) app_main: [REC PROGRESS] 2195456 bytes captured (68.6 sec)[0m
+[0;32mI (71300) app_main: [REC PROGRESS] 2230016 bytes captured (69.7 sec)[0m
+[0;32mI (72350) app_main: [REC PROGRESS] 2260992 bytes captured (70.7 sec)[0m
+[0;32mI (73370) app_main: [REC PROGRESS] 2295552 bytes captured (71.7 sec)[0m
+[0;32mI (74420) app_main: [REC PROGRESS] 2326528 bytes captured (72.7 sec)[0m
+[0;32mI (75430) app_main: [REC PROGRESS] 2361088 bytes captured (73.8 sec)[0m
+[0;32mI (76480) app_main: [REC PROGRESS] 2392064 bytes captured (74.8 sec)[0m
+[0;32mI (77490) app_main: [REC PROGRESS] 2426624 bytes captured (75.8 sec)[0m
+[0;32mI (78550) app_main: [REC PROGRESS] 2457600 bytes captured (76.8 sec)[0m
+[0;32mI (79560) app_main: [REC PROGRESS] 2492160 bytes captured (77.9 sec)[0m
+[0;32mI (80610) app_main: [REC PROGRESS] 2523136 bytes captured (78.8 sec)[0m
+[0;32mI (81620) app_main: [REC PROGRESS] 2557696 bytes captured (79.9 sec)[0m
+[0;32mI (82670) app_main: [REC PROGRESS] 2588672 bytes captured (80.9 sec)[0m
+[0;32mI (83690) app_main: [REC PROGRESS] 2623232 bytes captured (82.0 sec)[0m
+[0;32mI (84740) app_main: [REC PROGRESS] 2654208 bytes captured (82.9 sec)[0m
+[0;32mI (85750) app_main: [REC PROGRESS] 2688768 bytes captured (84.0 sec)[0m
+[0;32mI (86800) app_main: [REC PROGRESS] 2719744 bytes captured (85.0 sec)[0m
+[0;32mI (87810) app_main: [REC PROGRESS] 2754304 bytes captured (86.1 sec)[0m
+[0;32mI (88870) app_main: [REC PROGRESS] 2785280 bytes captured (87.0 sec)[0m
+[0;32mI (89880) app_main: [REC PROGRESS] 2819840 bytes captured (88.1 sec)[0m
+[0;32mI (90930) app_main: [REC PROGRESS] 2850816 bytes captured (89.1 sec)[0m
+[0;32mI (91940) app_main: [REC PROGRESS] 2885376 bytes captured (90.2 sec)[0m
+[0;32mI (92990) app_main: [REC PROGRESS] 2916352 bytes captured (91.1 sec)[0m
+[0;32mI (93990) app_main: [REC PROGRESS] 2950656 bytes captured (92.2 sec)[0m
+[0;32mI (95060) app_main: [REC PROGRESS] 2981888 bytes captured (93.2 sec)[0m
+[0;32mI (96070) app_main: [REC PROGRESS] 3016448 bytes captured (94.3 sec)[0m
+[0;32mI (97120) app_main: [REC PROGRESS] 3047424 bytes captured (95.2 sec)[0m
+[0;32mI (98130) app_main: [REC PROGRESS] 3081984 bytes captured (96.3 sec)[0m
+[0;32mI (99190) app_main: [REC PROGRESS] 3112960 bytes captured (97.3 sec)[0m
+[0;32mI (100200) app_main: [REC PROGRESS] 3147520 bytes captured (98.4 sec)[0m
+[0;32mI (101250) app_main: [REC PROGRESS] 3178496 bytes captured (99.3 sec)[0m
+[0;32mI (102260) app_main: [REC PROGRESS] 3213056 bytes captured (100.4 sec)[0m
+[0;32mI (103310) app_main: [REC PROGRESS] 3244032 bytes captured (101.4 sec)[0m
+[0;32mI (104310) app_main: [REC PROGRESS] 3278336 bytes captured (102.4 sec)[0m
+[0;32mI (105370) app_main: [REC PROGRESS] 3309568 bytes captured (103.4 sec)[0m
+[0;32mI (106370) app_main: [REC PROGRESS] 3343616 bytes captured (104.5 sec)[0m
+[0;32mI (107430) app_main: [REC PROGRESS] 3375104 bytes captured (105.5 sec)[0m
+[0;32mI (108440) app_main: [REC PROGRESS] 3409536 bytes captured (106.5 sec)[0m
+[0;32mI (109490) app_main: [REC PROGRESS] 3440640 bytes captured (107.5 sec)[0m
+[0;32mI (110500) app_main: [REC PROGRESS] 3475200 bytes captured (108.6 sec)[0m
+[0;32mI (111540) app_main: [REC PROGRESS] 3506176 bytes captured (109.6 sec)[0m
+[0;32mI (112550) app_main: [REC PROGRESS] 3540608 bytes captured (110.6 sec)[0m
+[0;32mI (113600) app_main: [REC PROGRESS] 3571712 bytes captured (111.6 sec)[0m
+[0;32mI (114610) app_main: [REC PROGRESS] 3606272 bytes captured (112.7 sec)[0m
+[0;32mI (115670) app_main: [REC PROGRESS] 3637248 bytes captured (113.7 sec)[0m
+[0;32mI (116680) app_main: [REC PROGRESS] 3671808 bytes captured (114.7 sec)[0m
+[0;32mI (117720) app_main: [REC PROGRESS] 3702784 bytes captured (115.7 sec)[0m
+[0;32mI (118730) app_main: [REC PROGRESS] 3736832 bytes captured (116.8 sec)[0m
+[0;32mI (119780) app_main: [REC PROGRESS] 3768320 bytes captured (117.8 sec)[0m
+[0;32mI (120790) app_main: [REC PROGRESS] 3802752 bytes captured (118.8 sec)[0m
+[0;32mI (121840) app_main: [REC PROGRESS] 3833856 bytes captured (119.8 sec)[0m
+[0;32mI (122850) app_main: [REC PROGRESS] 3868416 bytes captured (120.9 sec)[0m
+[0;32mI (123900) app_main: [REC PROGRESS] 3899392 bytes captured (121.9 sec)[0m
+[0;32mI (124900) app_main: [REC PROGRESS] 3933824 bytes captured (122.9 sec)[0m
+[0;32mI (125940) app_main: [REC PROGRESS] 3964928 bytes captured (123.9 sec)[0m
+[0;32mI (126950) app_main: [REC PROGRESS] 3999360 bytes captured (125.0 sec)[0m
+[0;32mI (127990) app_main: [REC PROGRESS] 4030464 bytes captured (126.0 sec)[0m
+[0;32mI (129000) app_main: [REC PROGRESS] 4064896 bytes captured (127.0 sec)[0m
+[0;32mI (130040) app_main: [REC PROGRESS] 4096000 bytes captured (128.0 sec)[0m
+[0;32mI (131050) app_main: [REC PROGRESS] 4130432 bytes captured (129.1 sec)[0m
+[0;32mI (132080) app_main: [REC PROGRESS] 4161536 bytes captured (130.0 sec)[0m
+[0;32mI (133090) app_main: [REC PROGRESS] 4195968 bytes captured (131.1 sec)[0m
+[0;32mI (134130) app_main: [REC PROGRESS] 4227072 bytes captured (132.1 sec)[0m
+[0;32mI (135140) app_main: [REC PROGRESS] 4261504 bytes captured (133.2 sec)[0m
+[0;32mI (136170) app_main: [REC PROGRESS] 4292608 bytes captured (134.1 sec)[0m
+[0;32mI (137170) app_main: [REC PROGRESS] 4326528 bytes captured (135.2 sec)[0m
+[0;32mI (138220) app_main: [REC PROGRESS] 4358144 bytes captured (136.2 sec)[0m
+[0;32mI (139240) app_main: [REC PROGRESS] 4392576 bytes captured (137.3 sec)[0m
+[0;32mI (140270) app_main: [REC PROGRESS] 4423680 bytes captured (138.2 sec)[0m
+[0;32mI (141290) app_main: [REC PROGRESS] 4458112 bytes captured (139.3 sec)[0m
+[0;32mI (142320) app_main: [REC PROGRESS] 4489216 bytes captured (140.3 sec)[0m
+[0;32mI (143330) app_main: [REC PROGRESS] 4523648 bytes captured (141.4 sec)[0m
+[0;32mI (144370) app_main: [REC PROGRESS] 4554752 bytes captured (142.3 sec)[0m
+[0;32mI (145380) app_main: [REC PROGRESS] 4589184 bytes captured (143.4 sec)[0m
+[0;32mI (146410) app_main: [REC PROGRESS] 4620288 bytes captured (144.4 sec)[0m
+[0;32mI (147410) app_main: [REC PROGRESS] 4654208 bytes captured (145.4 sec)[0m
+[0;32mI (148470) app_main: [REC PROGRESS] 4685824 bytes captured (146.4 sec)[0m
+[0;32mI (149480) app_main: [REC PROGRESS] 4720256 bytes captured (147.5 sec)[0m
+[0;32mI (150520) app_main: [REC PROGRESS] 4751360 bytes captured (148.5 sec)[0m
+[0;32mI (151530) app_main: [REC PROGRESS] 4785792 bytes captured (149.6 sec)[0m
+[0;32mI (152560) app_main: [REC PROGRESS] 4816896 bytes captured (150.5 sec)[0m
+[0;32mI (153570) app_main: [REC PROGRESS] 4851328 bytes captured (151.6 sec)[0m
+[0;32mI (154610) app_main: [REC PROGRESS] 4882432 bytes captured (152.6 sec)[0m
+[0;32mI (155620) app_main: [REC PROGRESS] 4916864 bytes captured (153.7 sec)[0m
+[0;32mI (156660) app_main: [REC PROGRESS] 4947968 bytes captured (154.6 sec)[0m
+[0;32mI (157670) app_main: [REC PROGRESS] 4982400 bytes captured (155.7 sec)[0m
+[0;32mI (158710) app_main: [REC PROGRESS] 5013504 bytes captured (156.7 sec)[0m
+[1;31mE (159400) wav_writer: Filesystem write error! Expected 4096 bytes, wrote 0.[0m
+[1;31mE (159400) app_main: Critical write failure while recording![0m
+[0;32mI (159400) app_main: Stopping voice recording session...[0m
+[0;32mI (159410) audio_capture: I2S RX channel paused.[0m
+[1;31mE (159410) wav_writer: Filesystem write error! Expected 4096 bytes, wrote 0.[0m
+[0;32mI (159420) wav_writer: Finalizing WAV header for /flash/REC0007.WAV...[0m
+[0;32mI (159420) wav_writer:   Total audio data written: 5033984 bytes[0m
+[0;32mI (159530) wav_writer: WAV closed successfully: /flash/REC0007.WAV[0m
+[0;32mI (159530) wav_writer:   Final file size: 5034028 bytes | Duration: 157.31 seconds[0m
+[0;33mW (159540) wav_writer: File size mismatch! Expected 5034028, filesystem reports 5033984.[0m
+[0;32mI (160290) app_main: Recording finalized successfully. System returned to IDLE.[0m
+[0;32mI (160290) app_main: --------------------------------------------------[0m
+[1;31mE (160320) app_main: ==========================================================[0m
+[1;31mE (160330) app_main:   SYSTEM ERROR: flash write failed during recording[0m
+[1;31mE (160330) app_main:   Status LED will blink error pattern (3 flashes + pause).[0m
+[1;31mE (160330) app_main:   Resolve the issue and press RST on the ESP32-S3 board.[0m
+[1;31mE (160340) app_main: ==========================================================[0m
+[0;32mI (880) app_main: ==========================================================[0m
+[0;32mI (880) app_main:   ESP32-S3 Voice Recorder Firmware V1 (ESP-IDF C)[0m
+[0;32mI (880) app_main:   Build Date: Nov  7 2026 15:49:38[0m
+[0;32mI (880) app_main:   Silicon Revision: v0.2 | Cores: 2[0m
+[0;32mI (890) app_main:   Framework: ESP-IDF Native C99/C11 (No Arduino, No C++)[0m
+[0;32mI (890) app_main: ==========================================================[0m
+[0;32mI (900) app_main: Starting Wi-Fi hotspot...[0m
+[0;32mI (920) pp: pp rom version: e7ae62f[0m
+[0;32mI (920) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (930) wifi:wifi driver task: 3fcaa310, prio:23, stack:6656, core=0[0m
+[0;32mI (930) wifi:wifi firmware version: c6dceae[0m
+[0;32mI (930) wifi:wifi certification version: v7.0[0m
+[0;32mI (930) wifi:config NVS flash: enabled[0m
+[0;32mI (940) wifi:config nano formatting: disabled[0m
+[0;32mI (940) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (950) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (950) wifi:Init management short buffer num: 32[0m
+[0;32mI (950) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (960) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (960) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (970) wifi:Init static rx buffer num: 10[0m
+[0;32mI (970) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (970) wifi_init: rx ba win: 6[0m
+[0;32mI (980) wifi_init: accept mbox: 6[0m
+[0;32mI (980) wifi_init: tcpip mbox: 32[0m
+[0;32mI (980) wifi_init: udp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp tx win: 5760[0m
+[0;32mI (990) wifi_init: tcp rx win: 5760[0m
+[0;32mI (990) wifi_init: tcp mss: 1440[0m
+[0;32mI (1000) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1000) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1010) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1050) wifi:mode : softAP (10:00:3b:4b:a5:cd)[0m
+[0;32mI (1060) wifi:Total power save buffer number: 16[0m
+[0;32mI (1060) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1060) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1060) WIFI_AP: Wi-Fi hotspot started![0m
+[0;32mI (1060) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1070) WIFI_AP: Network: VoiceRecorder[0m
+[0;32mI (1070) WIFI_AP: Password: 12345678[0m
+[0;32mI (1080) WIFI_AP: IP: 192.168.4.1[0m
+[0;32mI (1160) oled_ui: OLED initialized at 0x3C[0m
+[0;32mI (1160) app_main: [STAGE 1] Initializing Status LED...[0m
+[0;32mI (1160) status_led: Configuring Status LED on GPIO 21 (Active HIGH)...[0m
+[0;32mI (1160) status_led: Status LED initialized successfully.[0m
+[0;32mI (1170) app_main: [STAGE 2] Initializing Button Input...[0m
+[0;32mI (1170) button_control: Configuring buttons (Record: GPIO 1, Spare: GPIO 2)...[0m
+[0;32mI (1180) button_control: Buttons initialized successfully (Active LOW with internal pull-up).[0m
+[0;32mI (1190) app_main: [STAGE 3] Mounting internal flash filesystem...[0m
+[0;32mI (1190) flash_storage: Mounting internal flash FAT filesystem at /flash...[0m
+[0;33mW (1200) flash_storage: A blank storage partition will be formatted on first boot.[0m
+[0;32mI (1220) flash_storage: Internal flash filesystem mounted. Free space: 0 MB[0m
+[1;31mE (1240) flash_storage: write() failed/short write: written=-1 expected=41 errno=28 reason=No space left on device[0m
+[1;31mE (1300) app_main: ==========================================================[0m
+[1;31mE (1300) app_main:   SYSTEM ERROR: Internal flash filesystem self-test failed[0m
+[1;31mE (1300) app_main:   Status LED will blink error pattern (3 flashes + pause).[0m
+[1;31mE (1310) app_main:   Resolve the issue and press RST on the ESP32-S3 board.[0m
+[1;31mE (1310) app_main: ==========================================================[0m
+[0;32mI (1320) main_task: Returned from app_main()[0m
+[0;32mI (880) app_main: ==========================================================[0m
+[0;32mI (880) app_main:   ESP32-S3 Voice Recorder Firmware V1 (ESP-IDF C)[0m
+[0;32mI (880) app_main:   Build Date: Nov  7 2026 15:49:38[0m
+[0;32mI (880) app_main:   Silicon Revision: v0.2 | Cores: 2[0m
+[0;32mI (890) app_main:   Framework: ESP-IDF Native C99/C11 (No Arduino, No C++)[0m
+[0;32mI (890) app_main: ==========================================================[0m
+[0;32mI (900) app_main: Starting Wi-Fi hotspot...[0m
+[0;32mI (920) pp: pp rom version: e7ae62f[0m
+[0;32mI (920) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (930) wifi:wifi driver task: 3fcaa310, prio:23, stack:6656, core=0[0m
+[0;32mI (930) wifi:wifi firmware version: c6dceae[0m
+[0;32mI (930) wifi:wifi certification version: v7.0[0m
+[0;32mI (930) wifi:config NVS flash: enabled[0m
+[0;32mI (940) wifi:config nano formatting: disabled[0m
+[0;32mI (940) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (950) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (950) wifi:Init management short buffer num: 32[0m
+[0;32mI (950) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (960) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (960) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (970) wifi:Init static rx buffer num: 10[0m
+[0;32mI (970) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (970) wifi_init: rx ba win: 6[0m
+[0;32mI (980) wifi_init: accept mbox: 6[0m
+[0;32mI (980) wifi_init: tcpip mbox: 32[0m
+[0;32mI (980) wifi_init: udp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp mbox: 6[0m
+[0;32mI (990) wifi_init: tcp tx win: 5760[0m
+[0;32mI (990) wifi_init: tcp rx win: 5760[0m
+[0;32mI (990) wifi_init: tcp mss: 1440[0m
+[0;32mI (1000) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1000) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1010) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1050) wifi:mode : softAP (10:00:3b:4b:a5:cd)[0m
+[0;32mI (1050) wifi:Total power save buffer number: 16[0m
+[0;32mI (1050) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1050) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1060) WIFI_AP: Wi-Fi hotspot started![0m
+[0;32mI (1060) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1070) WIFI_AP: Network: VoiceRecorder[0m
+[0;32mI (1070) WIFI_AP: Password: 12345678[0m
+[0;32mI (1080) WIFI_AP: IP: 192.168.4.1[0m
+[0;32mI (1160) oled_ui: OLED initialized at 0x3C[0m
+[0;32mI (1160) app_main: [STAGE 1] Initializing Status LED...[0m
+[0;32mI (1160) status_led: Configuring Status LED on GPIO 21 (Active HIGH)...[0m
+[0;32mI (1160) status_led: Status LED initialized successfully.[0m
+[0;32mI (1170) app_main: [STAGE 2] Initializing Button Input...[0m
+[0;32mI (1170) button_control: Configuring buttons (Record: GPIO 1, Spare: GPIO 2)...[0m
+[0;32mI (1180) button_control: Buttons initialized successfully (Active LOW with internal pull-up).[0m
+[0;32mI (1190) app_main: [STAGE 3] Mounting internal flash filesystem...[0m
+[0;32mI (1190) flash_storage: Mounting internal flash FAT filesystem at /flash...[0m
+[0;33mW (1200) flash_storage: A blank storage partition will be formatted on first boot.[0m
+[0;32mI (1220) flash_storage: Internal flash filesystem mounted. Free space: 0 MB[0m
+[1;31mE (1240) flash_storage: write() failed/short write: written=-1 expected=41 errno=28 reason=No space left on device[0m
+[1;31mE (1290) app_main: ==========================================================[0m
+[1;31mE (1290) app_main:   SYSTEM ERROR: Internal flash filesystem self-test failed[0m
+[1;31mE (1300) app_main:   Status LED will blink error pattern (3 flashes + pause).[0m
+[1;31mE (1300) app_main:   Resolve the issue and press RST on the ESP32-S3 board.[0m
+[1;31mE (1310) app_main: ==========================================================[0m
+[0;32mI (1320) main_task: Returned from app_main()[0m
